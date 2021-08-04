@@ -15,7 +15,8 @@ lives = 6
 #TODO-3: - Import the logo from hangman_art.py and print it at the start of the game.
 print(hangman_art.logo)
 
-print(chosen_word)
+
+
 
 #Create blanks
 display = []
@@ -48,6 +49,7 @@ while not end_of_game:
         if lives == 0:
             end_of_game = True
             print("You lose.")
+            print(f"the word is: {chosen_word}")
 
     #Join all the elements in the list and turn it into a String.
     print(f"{' '.join(display)}")
